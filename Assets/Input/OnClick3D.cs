@@ -2,8 +2,9 @@
 using System.Collections;
 
 public abstract class OnClick3D : MonoBehaviour {
+	public int mouseButton = 0;
 	private void Update() {
-		if(Input.GetMouseButtonDown(0)) {
+		if(Input.GetMouseButtonDown(mouseButton)) {
 			OnClickAt (Input.mousePosition);
 		}
 	}
